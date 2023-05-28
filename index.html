@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- js -->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/custom.js"></script>
+    <title>Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>WELCOME</h1>
+                <hr>
+                <h4>Pilih menu yang anda inginkan!</h4>
+                <button type="button" class="btn btn-primary" id="menu1" onclick="cekbilangan()">Cek Bilangan</button>
+                <button type="button" class="btn btn-primary" id="menu2" onclick="datadiri()">Input data diri</button>
+                <button type="button" class="btn btn-primary" id="menu3" onclick="kalkulator()">Kalkulator</button>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 table-nama" id="table-data">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Angkatan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="nama"></td>
+                            <td id="nim"></td>
+                            <td id="angkatan"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12 kalkulator" id="kalkulator">
+                <table class="table-kalkulator">
+                    <tr>
+                        <td colspan="4" id="hasil-kalkulator">0</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="button-kalkulator" onclick="number(7)">7</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(8)">8</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(9)">9</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="bagi()">/</button></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="button-kalkulator" onclick="number(4)">4</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(5)">5</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(6)">6</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="kali()">X</button></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="button-kalkulator" onclick="number(1)">1</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(2)">2</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(3)">3</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="kurang()">-</button></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><button class="button-kalkulator" onclick="hapus()">CE</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="number(0)">0</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="hasil()">=</button></td>
+                        <td align="center"><button class="button-kalkulator" onclick="tambah()">+</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
